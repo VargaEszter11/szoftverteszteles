@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.example.UserTest" time="1.098" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.example.UserTest" time="0.943" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="HU"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Microsoft\jdk-21.0.12.101-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\varga\AppData\Local\Temp\surefire4450762273351778628\surefirebooter10427724100388705708.jar C:\Users\varga\AppData\Local\Temp\surefire4450762273351778628 2026-10-19T16-40-01_193-jvmRun1 surefire17890096561948700864tmp surefire_09383583891324021199tmp"/>
+    <property name="sun.java.command" value="C:\Users\varga\AppData\Local\Temp\surefire10724268521506567627\surefirebooter7221227387979124377.jar C:\Users\varga\AppData\Local\Temp\surefire10724268521506567627 2026-10-19T16-50-07_883-jvmRun1 surefire3864659404691017906tmp surefire_04715207182164152261tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\varga\szoftverteszteles\4.gyak\User\target\test-classes;C:\Users\varga\szoftverteszteles\4.gyak\User\target\classes;C:\Users\varga\.m2\repository\org\junit\jupiter\junit-jupiter\5.11.1\junit-jupiter-5.11.1.jar;C:\Users\varga\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.1\junit-jupiter-api-5.11.1.jar;C:\Users\varga\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\varga\.m2\repository\org\junit\platform\junit-platform-commons\1.11.1\junit-platform-commons-1.11.1.jar;C:\Users\varga\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\varga\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.1\junit-jupiter-params-5.11.1.jar;C:\Users\varga\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.11.1\junit-jupiter-engine-5.11.1.jar;C:\Users\varga\.m2\repository\org\junit\platform\junit-platform-engine\1.11.1\junit-platform-engine-1.11.1.jar;C:\Users\varga\.m2\repository\org\mockito\mockito-junit-jupiter\5.14.2\mockito-junit-jupiter-5.14.2.jar;C:\Users\varga\.m2\repository\org\mockito\mockito-core\5.14.2\mockito-core-5.14.2.jar;C:\Users\varga\.m2\repository\net\bytebuddy\byte-buddy\1.15.4\byte-buddy-1.15.4.jar;C:\Users\varga\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.4\byte-buddy-agent-1.15.4.jar;C:\Users\varga\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\varga\AppData\Local\Temp\surefire4450762273351778628\surefirebooter10427724100388705708.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\varga\AppData\Local\Temp\surefire10724268521506567627\surefirebooter7221227387979124377.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.12.1+1-LTS"/>
@@ -59,7 +59,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="mockedUserReturnsConfiguredData" classname="com.example.UserTest" time="1.066"/>
-  <testcase name="realDatabaseIsNotImplemented" classname="com.example.UserTest" time="0.003"/>
-  <testcase name="updatePwdCallsDatabase" classname="com.example.UserTest" time="0.016"/>
+  <testcase name="mockedUserReturnsConfiguredData" classname="com.example.UserTest" time="0.91"/>
+  <testcase name="updatePwdCallsDatabase" classname="com.example.UserTest" time="0.02"/>
 </testsuite>
