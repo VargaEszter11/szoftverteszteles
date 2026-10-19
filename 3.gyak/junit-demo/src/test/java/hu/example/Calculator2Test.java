@@ -1,9 +1,11 @@
+package hu.example;
+
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class CalculatorTest2 {
+class Calculator2Test {
 
     private final Calculator calculator = new Calculator();
 
