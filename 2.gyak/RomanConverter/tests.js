@@ -54,4 +54,9 @@ QUnit.module("Arabic numbers to Roman Converter test cases", function () {
     QUnit.test("Maximum Roman numeral", function (assert) {
       assert.equal(romanConverter(3999), "MMMCMXCIX", "3999 should return MMMCMXCIX");
     });
+    QUnit.test("Zero, negative and missing input", function (assert) {
+      assert.equal(romanConverter(), "", "No argument should return empty string");
+      assert.equal(romanConverter(0), "", "0 should return empty string");
+      assert.equal(romanConverter(-5), "", "-5 should return empty string");
+    });
 });
