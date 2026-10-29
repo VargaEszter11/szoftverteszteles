@@ -68,6 +68,8 @@ class BankAccountTest {
             IllegalArgumentException.class,
             () -> account.withdraw(1000)
         );
+
+        assertEquals(500.0, account.getBalance());
     }
 
     @Test
@@ -77,6 +79,8 @@ class BankAccountTest {
             IllegalArgumentException.class,
             () -> account.deposit(-100)
         );
+
+        assertEquals(0.0, account.getBalance());
     }
 
     @Test
@@ -86,23 +90,33 @@ class BankAccountTest {
             IllegalArgumentException.class,
             () -> account.deposit(0)
         );
+
+        assertEquals(0.0, account.getBalance());
     }
 
     @Test
     @DisplayName("Negatív összeg nem vehető fel")
     void negativeWithdrawThrowsException() {
+        account.deposit(500);
+
         assertThrows(
             IllegalArgumentException.class,
             () -> account.withdraw(-100)
         );
+
+        assertEquals(500.0, account.getBalance());
     }
 
     @Test
     @DisplayName("Nulla összeg nem vehető fel")
     void zeroWithdrawThrowsException() {
+        account.deposit(500);
+
         assertThrows(
             IllegalArgumentException.class,
             () -> account.withdraw(0)
         );
+
+        assertEquals(500.0, account.getBalance());
     }
 }
