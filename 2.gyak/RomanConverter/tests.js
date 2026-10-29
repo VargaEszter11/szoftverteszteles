@@ -25,4 +25,12 @@ QUnit.module("Arabic numbers to Roman Converter test cases", function () {
       assert.equal(romanConverter(20), "XX", "20 should return XX");
       assert.equal(romanConverter(30), "XXX", "30 should return XXX");
     });
+    QUnit.test("Fifties and hundreds", function (assert) {
+      assert.equal(romanConverter(40), "XL", "40 should return XL");
+      assert.equal(romanConverter(50), "L", "50 should return L");
+      assert.equal(romanConverter(58), "LVIII", "58 should return LVIII");
+      assert.equal(romanConverter(80), "LXXX", "80 should return LXXX");
+      assert.equal(romanConverter(90), "XC", "90 should return XC");
+      assert.equal(romanConverter(100), "C", "100 should return C");
+    });
 });
