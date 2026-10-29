@@ -40,4 +40,18 @@ QUnit.module("Arabic numbers to Roman Converter test cases", function () {
       assert.equal(romanConverter(1000), "M", "1000 should return M");
       assert.equal(romanConverter(1994), "MCMXCIV", "1994 should return MCMXCIV");
     });
+    QUnit.test("Historical and modern years", function (assert) {
+      assert.equal(romanConverter(1066), "MLXVI", "1066 should return MLXVI");
+      assert.equal(romanConverter(1776), "MDCCLXXVI", "1776 should return MDCCLXXVI");
+      assert.equal(romanConverter(1918), "MCMXVIII", "1918 should return MCMXVIII");
+      assert.equal(romanConverter(1954), "MCMLIV", "1954 should return MCMLIV");
+      assert.equal(romanConverter(1984), "MCMLXXXIV", "1984 should return MCMLXXXIV");
+      assert.equal(romanConverter(1999), "MCMXCIX", "1999 should return MCMXCIX");
+      assert.equal(romanConverter(2000), "MM", "2000 should return MM");
+      assert.equal(romanConverter(2024), "MMXXIV", "2024 should return MMXXIV");
+    });
+
+    QUnit.test("Maximum Roman numeral", function (assert) {
+      assert.equal(romanConverter(3999), "MMMCMXCIX", "3999 should return MMMCMXCIX");
+    });
 });
