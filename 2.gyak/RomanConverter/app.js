@@ -15,7 +15,7 @@ const ROMAN_SYMBOLS = [
 ];
 
 function romanConverter(num) {
-  if (!num || num < 0) {
+  if (!Number.isInteger(num) || num < 1 || num > 3999) {
     return "";
   }
 
