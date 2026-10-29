@@ -1,9 +1,18 @@
+const ROMAN_SYMBOLS = [
+  ["V", 5],
+  ["IV", 4],
+  ["I", 1],
+];
+
 function romanConverter(num) {
-  if (num === 4) {
-    return "IV";
+  let result = "";
+
+  for (const [symbol, value] of ROMAN_SYMBOLS) {
+    result += symbol.repeat(Math.floor(num / value));
+    num %= value;
   }
 
-  return "I".repeat(num);
+  return result;
 }
 
 if (typeof module !== "undefined" && module.exports) {
