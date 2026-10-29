@@ -59,4 +59,21 @@ QUnit.module("Arabic numbers to Roman Converter test cases", function () {
       assert.equal(romanConverter(0), "", "0 should return empty string");
       assert.equal(romanConverter(-5), "", "-5 should return empty string");
     });
+    QUnit.test("Non-integer inputs", function (assert) {
+      assert.equal(romanConverter(1.5), "", "1.5 should return empty string");
+      assert.equal(romanConverter(3.99), "", "3.99 should return empty string");
+      assert.equal(romanConverter(NaN), "", "NaN should return empty string");
+      assert.equal(romanConverter(Infinity), "", "Infinity should return empty string");
+    });
+
+    QUnit.test("Non-number inputs", function (assert) {
+      assert.equal(romanConverter("5"), "", "String should return empty string");
+      assert.equal(romanConverter(null), "", "null should return empty string");
+      assert.equal(romanConverter([]), "", "Array should return empty string");
+    });
+
+    QUnit.test("Out of range inputs", function (assert) {
+      assert.equal(romanConverter(4000), "", "4000 should return empty string");
+      assert.equal(romanConverter(10000), "", "10000 should return empty string");
+    });
 });
