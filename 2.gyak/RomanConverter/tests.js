@@ -9,4 +9,7 @@ QUnit.module("Arabic numbers to Roman Converter test cases", function () {
       assert.equal(romanConverter(2), "II", "2 should return II");
       assert.equal(romanConverter(3), "III", "3 should return III");
     });
+    QUnit.test("Subtractive IV", function (assert) {
+      assert.equal(romanConverter(4), "IV", "4 should return IV");
+    });
 });
