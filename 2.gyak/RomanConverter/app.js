@@ -15,6 +15,10 @@ const ROMAN_SYMBOLS = [
 ];
 
 function romanConverter(num) {
+  if (!num || num < 0) {
+    return "";
+  }
+
   let result = "";
 
   for (const [symbol, value] of ROMAN_SYMBOLS) {
