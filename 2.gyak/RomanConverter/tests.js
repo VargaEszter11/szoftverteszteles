@@ -33,4 +33,11 @@ QUnit.module("Arabic numbers to Roman Converter test cases", function () {
       assert.equal(romanConverter(90), "XC", "90 should return XC");
       assert.equal(romanConverter(100), "C", "100 should return C");
     });
+    QUnit.test("Five hundreds and thousands", function (assert) {
+      assert.equal(romanConverter(400), "CD", "400 should return CD");
+      assert.equal(romanConverter(500), "D", "500 should return D");
+      assert.equal(romanConverter(900), "CM", "900 should return CM");
+      assert.equal(romanConverter(1000), "M", "1000 should return M");
+      assert.equal(romanConverter(1994), "MCMXCIV", "1994 should return MCMXCIV");
+    });
 });
